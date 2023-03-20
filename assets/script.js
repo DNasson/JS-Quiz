@@ -1,31 +1,67 @@
 var jsQuiz = [
     {
-        quest: 1,
-        answers: ["A", "B", "C", "D"],
-        right: ["B"],
+        question: "What can be done on a webpage with JavaScript?",
+        answers: {
+            a: 'Click a button',
+            b: 'Retrieve data',
+            c: 'Fill out a form',
+            d: 'All of the above',
+        },
+
+        correctAnswer: 'd'
     },
+
     {
-        quest: 2,
-        answers: ["A", "B", "C", "D"],
-        right: ["B"],
+        question: "What is a list of items surrounded by quotation marks called?",
+        answers: {
+            a: 'a list',
+            b: 'a lyric',
+            c: 'a string',
+            d: 'an array',
+        },
+
+        correctAnswer: 'c',
     },
+
     {
-        quest: 3,
-        answers: ["A", "B", "C", "D"],
-        right: ["B"],
+        question: "How can the number 5 be added to a variable?",
+        answers: {
+            a: '5',
+            b: '"Five"',
+            c: 'Not possible, only letters are variables',
+            d: 'a and b',
+        },
+
+        correctAnswer: 'd',
     },
+
     {
-        quest: 4,
-        answers: ["A", "B", "C", "D"],
-        right: ["B"],
+        question: "How do you call a function?",
+        answers: {
+            a: 'console.log',
+            b: 'Hey, function!',
+            c: 'Open Sesame!',
+            d: 'It is automatically called when defined',
+        },
+
+        correctAnswer: 'a',
     },
-    {   quest: 5,
-        answers: ["A", "B", "C", "D"],
-        right: ["B"],
-    },]
+
+    {
+        question: "What do you open in DevTools to see output for JavaScript?",
+        answers: {
+            a: 'Styles',
+            b: 'Console',
+            c: 'Performance',
+            d: 'Recorder',
+        },
+
+        correctAnswer: 'b',
+    },
+]
 
     for (var i = 0; i < jsQuiz.length; i++) {
-            document.write(jsQuiz[i].quest + "<br />");
+            document.write(jsQuiz[i].question + "<br />");
       
             for (var j = 0; j < jsQuiz[i].answers.length; j++) {
               document.write("<input type=radio id=myRadio name=radAnswer>" + jsQuiz[i].answers[j] + "<br />");
