@@ -59,11 +59,3 @@ var jsQuiz = [
         correctAnswer: 'b',
     },
 ]
-
-    for (var i = 0; i < jsQuiz.length; i++) {
-            document.write(jsQuiz[i].question + "<br />");
-      
-            for (var j = 0; j < jsQuiz[i].answers.length; j++) {
-              document.write("<input type=radio id=myRadio name=radAnswer>" + jsQuiz[i].answers[j] + "<br />");
-    }
-}
