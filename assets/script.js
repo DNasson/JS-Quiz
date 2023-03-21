@@ -59,3 +59,47 @@ var jsQuiz = [
         correctAnswer: 'b',
     },
 ]
+
+myFunctionA=function(){
+    console.log('a')
+} 
+myFunctionB=function(){
+    console.log('b')
+} 
+myFunctionC=function(){
+    console.log('c')
+} 
+myFunctionD=function(){
+    console.log('d')
+} 
+var count = localStorage.getItem("letters");
+
+var aButton = document.querySelector("#a");
+aButton.addEventListener("click", function() {
+    localStorage.setItem("letters", "a")
+}
+)
+var score =0;
+
+var timeEl = document.querySelector(".time");
+
+var mainEl = document.getElementById("main");
+
+var secondsLeft = 30;
+
+function startTime() {
+    // 
+    var startButton = document.querySelector(".start");
+    startButton.addEventListener("click", function() {
+        var timerInterval = setInterval
+        secondsLeft--;
+        timeEl.textContent = secondsLeft + " seconds left in quiz.";
+        if(secondsLeft === 0) {
+            clearInterval(timerInterval);
+        }  
+            
+}, 1000)
+        //   alert("Time is up!") 
+
+}
+startTime();
