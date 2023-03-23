@@ -88,18 +88,18 @@ var mainEl = document.getElementById("main");
 var secondsLeft = 30;
 
 function startTime() {
-    // 
+
     var startButton = document.querySelector(".start");
     startButton.addEventListener("click", function() {
-        var timerInterval = setInterval
-        secondsLeft--;
-        timeEl.textContent = secondsLeft + " seconds left in quiz.";
-        if(secondsLeft === 0) {
-            clearInterval(timerInterval);
-        }  
-            
-}, 1000)
-        //   alert("Time is up!") 
-
+        event.preventDefault();
+        var timerInterval = setInterval (function() {
+            secondsLeft--;
+            timeEl.textContent = secondsLeft + " seconds left in quiz.";
+            if(secondsLeft === 0) {
+                clearInterval(timerInterval);
+            }  
+                 
+    }, 1000)
+}) 
 }
 startTime();
