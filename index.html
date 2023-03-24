@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,42 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>JavaScript Quiz</title>
 </head>
+
 <body>
     <div style="text-align: center;">
-    <h1>JavaScript Quiz</h1>
+        <h1>JavaScript Quiz</h1>
         <p>
-            <h2>Answer questions to test your JavaScript knowledge!</h2>
+        <h2>Answer questions to test your JavaScript knowledge!</h2>
         </p>
         <p>
-            <h3>Each question will be worth 5 points.</h3>
+        <h3>Each question will be worth 5 points.</h3>
         </p>
     </div>
-    
-   <h3 class="time" style="text-align:center;"></h3>
-   <div id="main">
-    <button class="start" style="text-align: center;">Start</button>
-   </div>
-    <div class="panel">
-        <div class="result">
-        </div>
-        <div class="question-container" id="question">
-            Question!
-        </div>
-        <div class="answer-container">
-            <button class="answers" onclick="myFunctionA()" id="a">A</button>
-            <button class="answers" onclick="myFunctionB()" id="b">B</button>
-            <button class="answers" onclick="myFunctionC()" id="c">C</button>
-            <button class="answers" onclick="myFunctionD()" id="d">D</button>
-        </div>
-        <div class="navigation">
-            <button class="next">Next</button>
-        </div> 
-     </div>
 
-    <script src = ./assets/script.js> </script> 
+
+    <main id="main">
+        <h3 class="time" style="text-align:center;"></h3>
+        <button class="start" style="text-align: center;">Start</button>
+        <div class="panel">
+            <div class="result">
+            </div>
+            <div class="question-container hide" id="question-container">
+                Question!
+            </div>
+            <div class="answer-container hide " id="answer-container">
+                <button class="answers" onclick="myFunctionA()" id="a">A</button>
+                <button class="answers" onclick="myFunctionB()" id="b">B</button>
+                <button class="answers" onclick="myFunctionC()" id="c">C</button>
+                <button class="answers" onclick="myFunctionD()" id="d">D</button>
+            </div>
+            <div class="navigation">
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src=./assets/script.js> </script>
 </body>
+
 </html>
