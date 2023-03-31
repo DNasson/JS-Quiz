@@ -11,7 +11,7 @@ Deployed URL
 https://dnasson.github.io/JS-Quiz/
 
 Screenshot of opening screen
-<image src= ".assets/image/Screenshot.jpeg" alt="screenshot of opening page">
+
 
 
 
