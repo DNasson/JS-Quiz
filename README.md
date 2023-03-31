@@ -11,7 +11,7 @@ Deployed URL
 https://dnasson.github.io/JS-Quiz/
 
 Screenshot of opening screen
-/Users/daniellenasson/JS-Quiz-Challenge4/assets/image/Screenshot.jpeg 
+(https://user-images.githubusercontent.com/123035338/229009570-13a45d82-d1ea-4617-b244-06d9904ff4bf.jpeg)
 
 
 Initial Release
