@@ -4,6 +4,7 @@ var mainEl = document.getElementById("main");
 var questionContainer = document.getElementById('question-container');
 var answersContainer = document.getElementById('answer-container');
 var answerButtons = document.querySelectorAll('button[class="answers"]');
+var question = [];
 //console.log('answerButtons is', answerButtons);
 var userScore = 0;
 var questionIndex = 0;
@@ -107,6 +108,7 @@ function checkUserAnswer(e) {
     questionIndex++;
     showQuestion();
 }
+
 // event listeners
 answersContainer.addEventListener("click", checkUserAnswer);
 startButton.addEventListener("click", showQuestion);
@@ -117,6 +119,9 @@ startButton.addEventListener("click", function () {
         timeEl.textContent = secondsLeft + " seconds left in quiz.";
         if (secondsLeft === 0) {
             clearInterval(timerInterval);
+            alert("Time is up!!")
+            alert("Your score is "+userScore+"!")
         }
     }, 1000);
 }) 
+console.log(question)
