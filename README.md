@@ -13,6 +13,7 @@ https://dnasson.github.io/JS-Quiz/
 Screenshot of opening screen
 
 
+![87B42F8A-5790-4256-94A0-EABD2CA64169]
 
 
 Initial Release
